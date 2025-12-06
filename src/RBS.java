@@ -6,7 +6,7 @@ public class RBS {
     }
     public int search(int[] nums,int target){
         int pivot=findPivot(nums);
-        if(pivot==-1){
+        if(pivot==-1){ // it means the array is not rotated
             return binarySearch(nums,target,0,nums.length-1);
 
         }
